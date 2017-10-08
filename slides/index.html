@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="vendor/reveal.js-3.5.0/css/reveal.css">
+        <link rel="stylesheet" href="vendor/reveal.js-3.5.0/css/theme/moon.css">
+        <!-- <link rel="stylesheet" href="vendor/reveal.js-3.5.0/css/theme/black.css"> -->
+
+		<!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="vendor/reveal.js-3.5.0/lib/css/zenburn.css">
+
+        <!-- some icons -->
+        <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <!-- custom CSS -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                    <div class="slides">
+                            <!--  -->
+                            <section>
+                                <h1>PRESENTATION</h1>
+                                Une prez en reveal.js<br/>
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                            </section>
+                            <!--  -->
+                            <section>fill me</section>
+                            <section>fill me 2</i>
+                            </section>
+			</div> <!-- div class = slides -->
+		</div><!-- div class = reveal -->
+
+		<script src="vendor/reveal.js-3.5.0/lib/js/head.min.js"></script>
+		<script src="vendor/reveal.js-3.5.0/js/reveal.js"></script>
+
+        <!--Raphael permits to draw SVG-->
+        <script src="js/raphael.min.js"></script>
+        <!--nomnoml permits to draw UML-->
+        <script src="vendor/nomnoml/lib/lodash.min.js"></script>
+        <script src="vendor/nomnoml/lib/dagre.min.js"></script>
+        <script src="vendor/nomnoml/dist/nomnoml.js"></script>
+
+<!--My custom script-->
+<script src="js/main.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'vendor/reveal.js-3.5.0/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+
+                    { src: 'vendor/reveal.js-3.5.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                    { src: 'vendor/reveal.js-3.5.0/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                    // Syntax highlight for <code> elements
+                    { src: 'vendor/reveal.js-3.5.0/plugin//highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                    { src: 'vendor/reveal.js-3.5.0/plugin/notes/notes.js' }
+                ]
+            });
+
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			// Reveal.initialize({
+			// 	dependencies: [
+			// 		{ src: 'plugin/markdown/marked.js' },
+			// 		{ src: 'plugin/markdown/markdown.js' },
+			// 		{ src: 'plugin/notes/notes.js', async: true },
+			// 		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			// 	]
+			// });
+		</script>
+	</body>
+</html>
