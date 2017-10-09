@@ -80,6 +80,19 @@
                 ]
             });
 
+            // Enable navigation with mouse
+            function handleClick(e) {
+                e.preventDefault();
+                // left click ---> move next
+                if(e.button === 0) Reveal.next();
+                //right click ---> move previous
+                if(e.button === 2) Reveal.prev();
+            }
+
+            window.addEventListener("mousedown", handleClick, false);
+            window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
